@@ -1,0 +1,175 @@
+ body{
+                background-color: #FFFFFF;
+                font-family: Roboto, arial;
+                min-height: 100vh;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .title{
+                width: 200px;
+                margin-bottom: 10px;
+            }
+            .image{
+                display: none;
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                align-items: center;
+                justify-content: center;
+            }
+            .username{
+                background-color: #f9f9f9;
+                border: 1px solid rgb(138, 136, 136);
+                font-size: 10px;
+                border-radius: 2px;
+                width: 189px;
+                height: 25px;
+                color: rgb(185, 183, 183);
+                padding-left: 8px;
+            }
+            .password{
+                background-color: #f9f9f9;
+                font-size: 10px;
+                border: 1px solid rgb(138, 136, 136);
+                height: 25px;
+                width: 189px;
+                border-radius: 2px;
+                color: rgb(185, 183, 183);
+                padding-left: 8px;
+                margin-bottom: 10px;
+            }
+            .login-button{
+                background-color: rgb(121, 138, 250);
+                color: white;
+                font-weight: 300;
+                width: 202px;
+                height: 31.98px;
+                border-radius: 8px;
+                border: none;
+                cursor: pointer;
+            }
+            .divider{
+                display: flex;
+                align-items: center;
+                gap: 18px;
+                width: 200px;
+                color: grey;
+                font-size: 11px;
+                font-weight: 450;
+                margin-top: 16px;
+                margin-bottom: 16px;
+            }
+            .divider::before, .divider::after{
+                content: "";
+                flex: 1;
+                height: 1px;
+                background-color: #dbdbdb;
+            }
+            .fb{
+                display: flex;
+                vertical-align: bottom;
+            }
+            .facebook-logo{
+                display: inline-block;
+                width: 15px;
+                cursor: pointer;
+            }
+            .facebook{
+                background-color: #FFFFFF;
+                color: rgb(0, 145, 255);
+                border: none;
+                cursor: pointer;
+                font-size: 11px;
+                font-weight: bold;
+            }
+            a.forgot-password, a.sign-up{
+                text-decoration: none !important;
+            }
+            .forgot-password{
+                color:black;
+                font-size: 12px;
+                text-decoration: none;
+                font-weight: 500;
+                margin-bottom: 30px;
+            }
+            .forgot-password:hover{
+                text-decoration: underline;
+            }
+            .no-acc{
+                font-size: 14px;
+                color: black;
+                font-size: 12px;
+                font-weight: 100;
+            }
+            .sign-up{
+                color: rgb(79, 101, 241);
+                font-weight: 500;
+                cursor: pointer;
+            }
+            .links{
+                text-align: center;
+                margin-top: auto;
+                width: 100%;
+            }
+            .last-link{
+                display: inline-block;
+                margin-right: 6px;
+                font-size: 10px;
+                color: #999999;
+                text-decoration: none;
+            }
+            .underline{
+                text-decoration: none;      
+            }
+            .main{
+                display: flex;
+                flex: 1;
+                justify-content: center;
+                align-items: center;
+            }
+            .extra-footer{
+                display: flex;
+                float: row;
+                justify-content: space-between;
+                text-align: center;
+                font-size: 10px;
+                color: #999999;
+                margin-bottom: 10px;
+            }
+            .language{
+                font-size: 10px;
+                font-family: Roboto, arial;
+                color: #999999;
+                border-radius: 4px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                margin-right: 6px;
+            }
+            @media(min-width:1000px){
+                .image{
+                    display: flex;
+                    width: 440px;
+                }
+                .screen{
+                    display: flex;
+                    flex-grow: 1;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 60px;
+                    margin:0 auto;
+                    flex-wrap: wrap;
+                    padding: 20px;
+                }
+                .last-link{
+                    margin-right: 12px;
+                }
+            }
